@@ -2,7 +2,7 @@
 
 ## About Me
 * School Email: johnsonj1404@durhamtech.edu 
-* Dream Career: 
+* Dream Career: Web developer
 * Hidden Talent: music play
 
 ## Course Information
