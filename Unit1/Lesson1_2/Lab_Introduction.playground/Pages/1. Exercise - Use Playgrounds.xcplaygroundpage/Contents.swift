@@ -10,11 +10,17 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
-
+print("(Song Title) I can only Imagine, Artist (Mercy Me)")
 
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
+print("Alleluia, Alleluia")
+print("For the Lord God Almighty reigns")
+print("Alleluia, Alleluia")
+print("For the Lord God Almighty reigns")
+print("Alleluia")
+
 
 
 
