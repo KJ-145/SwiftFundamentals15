@@ -17,6 +17,10 @@ print("Holy Forever")
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
-
+print("Alleluia, Alleluia")
+print("For the Lord God Almighty reigns")
+print("Alleluia, Alleluia")
+print("For the Lord God Almighty reigns")
+print("Alleluia")
 
 //:page 14 of 16  |  [Next: Exercise: Go! Fight! Win!](@next)
