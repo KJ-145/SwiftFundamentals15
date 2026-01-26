@@ -13,7 +13,7 @@ print(schooling)
 
 
 //:  Does the above code compile? Why is this different than trying to update a constant? Print your explanation to the console using the `print` function.
-print("Because a constant is used for unchangle variables")
+print("Because a constants are unchangale")
 
 
 /*:
