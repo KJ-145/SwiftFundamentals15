@@ -14,7 +14,7 @@
 let Name = "John"
 let Age = 17
 var todayStep = 980
-let Goal = 1000
+let dailyStepGoal = 1000
 var averageHeartRate = 60 
 
 
