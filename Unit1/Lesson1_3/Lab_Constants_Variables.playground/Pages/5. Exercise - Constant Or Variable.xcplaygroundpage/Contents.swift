@@ -16,7 +16,6 @@ let releasedYear = 2025
 let releasedMonth = 9
 let releasedDay = 18
 
-
 /*:
 [Previous](@previous)  |  page 5 of 10  |  [Next: App Exercise - Fitness Tracker: Constant or Variable?](@next)
  */
