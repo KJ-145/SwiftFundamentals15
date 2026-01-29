@@ -18,7 +18,7 @@ let dailyStepGoal = 1000
 var averageHeartRate = 60 
 
 
-
+let Name = "James"
 /*:
  Now go back and add a line after each constant or variable declaration. On those lines, print a statement explaining why you chose to declare the piece of information as a constant or variable.
  

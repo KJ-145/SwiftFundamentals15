@@ -5,6 +5,7 @@
  */
 var schooling = 1
 print(schooling)
+<<<<<<< Updated upstream
 
 //:  Now imagine you just completed an additional year of school, and update the `schooling` variable accordingly. Print `schooling` to the console.
 schooling = 2
@@ -15,6 +16,13 @@ print(schooling)
 //:  Does the above code compile? Why is this different than trying to update a constant? Print your explanation to the console using the `print` function.
 print("Because a constants are unchangale")
 
+=======
+//:  Now imagine you just completed an additional year of school, and update the `schooling` variable accordingly. Print `schooling` to the console.
+schooling = 2
+print(schooling)
+//:  Does the above code compile? Why is this different than trying to update a constant? Print your explanation to the console using the `print` function.
+print("Because a constant is used for unchangle variables")
+>>>>>>> Stashed changes
 
 /*:
 [Previous](@previous)  |  page 3 of 10  |  [Next: App Exercise - Step Count](@next)

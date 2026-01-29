@@ -12,9 +12,15 @@
  */
 var numberOfLikes = 15
 var numberOfComments = 7
+<<<<<<< Updated upstream
 let releasedYear = 2025
 let releasedMonth = 9
 let releasedDay = 18
+=======
+let year = 2025
+let month = 9
+let day = 18
+>>>>>>> Stashed changes
 
 /*:
 [Previous](@previous)  |  page 5 of 10  |  [Next: App Exercise - Fitness Tracker: Constant or Variable?](@next)

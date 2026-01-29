@@ -5,6 +5,12 @@
  
  If you completed the Fitness Calculations exercise, you calculated an average heart rate to display to the user. However, using proper order of operations you can do this in fewer steps. Create three separate heart rate constants, all of type `Double`, with values between 60 and 100. Then create a constant equal to the average heart rate. If you use correct order of operations you can do the heart calculation in one line.
  */
+let heartrate1: Double = 62
+let heartrate2: Double = 78
+let heartrate3: Double = 99
+
+let avergaeHR = ((heartrate1 + heartrate2 + heartrate3) / 3)
+print(avergaeHR)
 
 
 /*:
@@ -12,7 +18,9 @@
  
  You may want to also show the temperature in celsius. You can convert fahrenheit to celsius by taking `tempInFahrenheit` and subtracting 32, then multiplying the result by (5.0/9.0). Create a constant `tempInCelsius` that calculates in one line the temperature in celsius.
  */
+let tempInFahrenheit = 98.6
 
+let tempInCelsius = ((tempInFahrenheit - 32) * 5.0/9.0)
 
 /*:
 [Previous](@previous)  |  page 6 of 8  |  [Next: Exercise - Numeric Type Conversion](@next)
