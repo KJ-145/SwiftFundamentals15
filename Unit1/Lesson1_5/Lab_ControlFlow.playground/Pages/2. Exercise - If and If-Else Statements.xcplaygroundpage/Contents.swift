@@ -25,7 +25,7 @@ if dollars == 0 {
         print("You've got some spending money!")
     }
 else {
-    print("Look to me like you're rich!")
+    print("Looks to me like you're rich!")
 }
 
 /*:
