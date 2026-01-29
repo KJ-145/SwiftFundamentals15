@@ -28,7 +28,7 @@ case 161...180:
     print("You are in the Hard zone. Activity in this zone increases maxmimum performance capacity for shorter sessions.")
 case 181...200:
     print("You are in the Maximum zone. Activity in this zone helps fit athletes develop speed.")
-case ...201:
+case 201...:
     print("You're above the Maximum zone, please slow down for own your saftey.")
 default:
     print("")
