@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad( {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var sample = "sample"
@@ -10,7 +10,7 @@ class ViewController: UIViewController {
         
         if false {
             print("Will this line of code ever be reached?")
-            someMetho()
+            someMethod()
         }
         
         
