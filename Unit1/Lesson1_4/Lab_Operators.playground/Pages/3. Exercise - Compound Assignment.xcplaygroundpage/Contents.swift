@@ -3,6 +3,10 @@
  
  Declare a variable whose value begins at 10. Using addition, update the value to 15 using the compound assignment operator. Using multiplication, update the value to 30 using compound assignment. Print out the variable's value after each assignment.
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 var number = 10
 number = number + 5
 number *= 2
@@ -25,6 +29,16 @@ pennyBank /= 2
 pennyBank *= 3
 pennyBank -= 3
 
+<<<<<<< HEAD
+=======
+var pennyBank = 0
+pennyBank += 10
+pennyBank += 20
+pennyBank /= 2
+pennyBank *= 3
+pennyBank -= 3
+
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 print(pennyBank)
 
 /*:

@@ -9,6 +9,12 @@
  */
 let steps = 1000
 let goal = 10000
+<<<<<<< HEAD
+=======
+
+let percentOfGoal = (Double(steps) / Double(goal) ) * 100
+print(percentOfGoal)
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 
 let percentOfGoal = (Double(steps) / Double(goal) ) * 100
 print(percentOfGoal)

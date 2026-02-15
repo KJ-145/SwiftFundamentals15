@@ -19,6 +19,11 @@ print(avergaeHR)
  You may want to also show the temperature in celsius. You can convert fahrenheit to celsius by taking `tempInFahrenheit` and subtracting 32, then multiplying the result by (5.0/9.0). Create a constant `tempInCelsius` that calculates in one line the temperature in celsius.
  */
 let tempInFahrenheit = 98.6
+<<<<<<< HEAD
+=======
+
+let tempInCelsius = ((tempInFahrenheit - 32) * 5.0/9.0)
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 
 let tempInCelsius = ((tempInFahrenheit - 32) * 5.0/9.0)
 

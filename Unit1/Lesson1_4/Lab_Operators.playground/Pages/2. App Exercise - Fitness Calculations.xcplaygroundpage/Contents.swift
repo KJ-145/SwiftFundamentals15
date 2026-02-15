@@ -19,6 +19,16 @@ print(averageHR)
 let heartRate1D: Double = 65
 let heartRate2D: Double = 67
 let heartRate3D: Double = 111
+<<<<<<< HEAD
+=======
+
+let addedHRD = heartRate1D + heartRate2D + heartRate3D
+
+let averageHRD = addedHRD / 3
+print(averageHRD)
+
+print("This result is a  different from the previous because it is double, which printed the number and it's decimal.")
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 
 let addedHRD = heartRate1D + heartRate2D + heartRate3D
 
@@ -31,6 +41,12 @@ print("This result is a  different from the previous because it is double, which
 let steps: Double = 3467
 let goal: Double = 10000
 
+<<<<<<< HEAD
+=======
+let steps: Double = 3467
+let goal: Double = 10000
+
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 let percentOfGoal = (steps / goal) * 100
 print(percentOfGoal)
 /*:

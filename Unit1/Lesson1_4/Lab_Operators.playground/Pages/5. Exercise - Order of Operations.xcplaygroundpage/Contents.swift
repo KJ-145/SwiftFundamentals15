@@ -5,10 +5,20 @@
  */
 print("20")
 print(10 + 2 * 5)
+<<<<<<< HEAD
 
 //:  In a separate `print` statement, add in the necessary parentheses so that addition takes place before multiplication.
 print((10 + 2) * 5)
 //:  Print out what you think 4 * 9 - 6 / 2 evaluates to. Then print out the actual expression.
+=======
+
+
+//:  In a separate `print` statement, add in the necessary parentheses so that addition takes place before multiplication.
+print((10 + 2) * 5)
+
+//:  Print out what you think 4 * 9 - 6 / 2 evaluates to. Then print out the actual expression.
+
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 print(33)
 print(4*(9-6)/2)
 

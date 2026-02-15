@@ -19,23 +19,24 @@ class ViewController: UIViewController {
     }
     fileprivate func updateUI() {
         //lightOn.toggle()
-        if lightOn {
-            view.backgroundColor = .white
+       // if lightOn {
+            //view.backgroundColor = .white
+            view.backgroundColor = lightOn ? .white : .black  // added on 12:00 PM
           //  lightButton.setTitle("On", for: .normal)
 
-        } else {
-            view.backgroundColor = .black
+       // } else {
+          //  view.backgroundColor = .black
           //  lightButton.setTitle("On", for: .normal)
         }
     }
 
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        lightOn.toggle()
-        updateUI()
+   // @IBAction func buttonPressed(_ sender: Any) {
+   //     lightOn.toggle()
+      //  updateUI()
         
-    }
+//    }
    
-}
+//}
 
  

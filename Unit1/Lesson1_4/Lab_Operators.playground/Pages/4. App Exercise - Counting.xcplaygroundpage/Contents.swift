@@ -5,6 +5,10 @@
  
  The most basic feature of your fitness tracking app is counting steps. Create a variable `steps` and set it equal to 0. Then increment its value by 1 to simulate a user taking a step.
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 var steps = 0
 steps += 1
 
@@ -15,8 +19,16 @@ steps += 1
  */
 var distance: Double = 50
 
+<<<<<<< HEAD
 distance /= 3
 print(distance)
+=======
+var distance: Double = 50
+
+distance /= 3
+print(distance)
+
+>>>>>>> f316e6fb767125ccedf3d2a88ac341f8e9a99943
 /*:
 [Previous](@previous)  |  page 4 of 8  |  [Next: Exercise - Order of Operations](@next)
  */
