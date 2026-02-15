@@ -44,8 +44,8 @@ if textToSearchThrough.lowercased().contains(textToSearchFor.lowercased()) {
     print("I found it!")
 }
 //:  Print to the console the number of characters in your name by using the `count` property on `name`.
-
-
+let count = name.count
+print(count)
 /*:
 [Previous](@previous)  |  page 4 of 5  |  [Next: App Exercise - Password Entry and User Search](@next)
  */
