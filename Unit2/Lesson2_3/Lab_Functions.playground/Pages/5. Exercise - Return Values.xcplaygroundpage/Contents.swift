@@ -7,9 +7,16 @@ func greeting (name: String) -> String {
     return ("Hi, \(name)! How are you?")
 }
 let result = greeting(name: "Sophie")
+print(result)
+
 //:  Write a function that takes two `Int` arguments, and returns an `Int`. The function should multiply the two arguments, add 2, then return the result. Use the function and print the result.
+func multiply (num1: Int, num2: Int) -> Int
+{
+    return num1 * num2 + 2
+}
 
-
+let iresult = multiply (num1: 4, num2: 4)
+print(iresult)
 /*:
 [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Separating Functions](@next)
  */
