@@ -28,7 +28,14 @@ struct Post {
 
 }
 
-var pos
+var post = Post(message: "Hi", likes: 0, numberOfComments: 1)
+
+print(post.likes)
+
+post.like()
+
+print(post.likes)
+
 /*:
 [Previous](@previous)  |  page 5 of 10  |  [Next: App Exercise - Workout Functions](@next)
  */
