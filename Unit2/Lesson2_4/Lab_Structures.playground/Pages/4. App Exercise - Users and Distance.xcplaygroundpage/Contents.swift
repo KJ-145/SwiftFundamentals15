@@ -28,16 +28,23 @@ print(Joshua.activityLevel)
  - Example: If you use the initializer for meters and pass in a distance of 1600, the initializer should set `meters` to 1600 and `feet` to 5249.344.
  */
 struct Distance {
-    var meters: Int
-    var feet: Int
+    var meters: Double
+    var feet: Double
+    
+    init(meters: Double) {
+        self.meters = meters
+        self.feet = meters * 3.28084
+        
+    }
+    
+    init(feet: Double) {
+        self.feet = feet
+        self.meters = feet / 3.28084
+    }
 }
-
-let 
-/*:
- In previous app exercises, you've worked with distance in the fitness tracking app example as a simple number. However, distance can be represented using a variety of units of measurement. Create a `Distance` struct that will represent distance in various units of measurement. At a minimum, it should have a `meters` property and a `feet` property. Create a custom initializer corresponding to each property (i.e. if you only have the two properties for meters and feet you will then have two initializers) that will take in a distance in one unit of measurement and assign the correct value to both units of measurements. Hint: *1 meter = 3.28084 feet*.
-
- - Example: If you use the initializer for meters and pass in a distance of 1600, the initializer should set `meters` to 1600 and `feet` to 5249.344.
- */
+let walk = Distance(meters: 500)
+print(walk.meters)
+print(walk.feet)
 
 /*:
  In previous app exercises, you've worked with distance in the fitness tracking app example as a simple number. However, distance can be represented using a variety of units of measurement. Create a `Distance` struct that will represent distance in various units of measurement. At a minimum, it should have a `meters` property and a `feet` property. Create a custom initializer corresponding to each property (i.e. if you only have the two properties for meters and feet you will then have two initializers) that will take in a distance in one unit of measurement and assign the correct value to both units of measurements. Hint: *1 meter = 3.28084 feet*.
