@@ -32,7 +32,6 @@ class Spaceship {
         func fire() {
             if remainingFirePower > 0 {
                 remainingFirePower -= 1
-                print(remainingFirePower)
             } else {
                 print("You have no more fire power")
             }
@@ -61,7 +60,11 @@ print(falcon.weapon)
  this does not compile because weapon is not on spaceship class. Its on fighter */
 //:  Add a method to `fighter` called `fire()`. This should check to see if `remainingFirePower` is greater than 0, and if so, should decrement `remainingFirePower` by one. If `remainingFirePower` is not greater than 0, print "You have no more fire power." Call `fire()` on `destroyer` a few times and print `remainingFirePower` after each method call.
 destroyer.fire()
+print(destroyer.remainingFirePower)
+
 destroyer.fire()
+print(destroyer.remainingFirePower)
+
 destroyer.fire()
 print(destroyer.remainingFirePower)
 

@@ -38,7 +38,7 @@ class Fighter: Spaceship {
     }
 }
 //:  Define a new class `ShieldedShip` that inherits from `Fighter`. Add a variable property `shieldStrength` that defaults to 25. Create a new instance of `ShieldedShip` called `defender`. Set `name` to "Defender" and `weapon` to "Cannon." Call `moveRight()` and print `position`, then call `fire()` and print `remainingFirePower`.
-class ShieldShip: Fighter {
+class ShieldedShip: Fighter {
     var shieldStrength = 25
     
     override func wasHit() {
@@ -52,7 +52,7 @@ class ShieldShip: Fighter {
 }
 
 
-let defender = ShieldShip()
+let defender = ShieldedShip()
 defender.name = "Defender"
 defender.weapon = "Cannon"
 defender.moveRight()
