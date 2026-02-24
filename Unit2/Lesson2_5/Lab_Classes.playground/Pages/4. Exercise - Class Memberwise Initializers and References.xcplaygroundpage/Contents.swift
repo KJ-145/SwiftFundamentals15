@@ -94,7 +94,7 @@ sameShip.moveLeft()
 print(falcon.position)
 print(sameShip.position)
 
-/* both changed their positions because they are connected to spaceShip the reference*
+/* both changed their positions because both are looking at the same thing.  s*
  
  
  if both we structs, it wouldnt be the same, there will be created a completely new spaceship/
