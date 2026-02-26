@@ -26,6 +26,14 @@ print(Array)
 
 //:  Print the last element of `colorsArray`, accessing it through the dictionary you've created. You'll have to use if-let syntax or the force unwrap operator to unwrap what is returned from the dictionary before you can access an element of the array.
 print(Array["Colors"]!.last!)
+
+var numberOfLegs = ["spider": 8, "human": 2, "sheep": 4, "cat": 4]
+
+numberOfLegs["snake"] = 0
+print(numberOfLegs)
+var bankAccounts = [18203, 29371, 10295, 47290]
+bankAccounts.insert(56123, at: 1)
+print(bankAccounts)
 /*:
 [Previous](@previous)  |  page 3 of 4  |  [Next: App Exercise - Pacing](@next)
  */

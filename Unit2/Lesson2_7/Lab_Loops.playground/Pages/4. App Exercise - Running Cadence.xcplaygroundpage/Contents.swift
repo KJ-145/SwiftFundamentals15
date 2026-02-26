@@ -12,9 +12,23 @@ let cadence: Double = 180
 var testSteps = 0
 
 
+while testSteps <= 9 {
+    print("take a step")
+    testSteps += 1
+    
+    Thread.sleep(forTimeInterval: 60/cadence)
+}
 //:  Recreate the above cadence example using a repeat-while loop.
-testSteps = 0 
+testSteps = 0
 
+repeat {
+    print("take a step")
+    testSteps += 1
+    
+    Thread.sleep(forTimeInterval: 60/cadence)
+
+    
+} while testSteps <= 9
 
 /*:
 [Previous](@previous)  |  page 4 of 6  |  [Next: Exercise - Control Transfer Statements](@next)
