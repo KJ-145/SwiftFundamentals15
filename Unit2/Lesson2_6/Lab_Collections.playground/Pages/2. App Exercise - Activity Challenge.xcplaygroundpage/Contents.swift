@@ -12,7 +12,7 @@ var walkChallenge: [String] = ["walk 30,000 steps", "walk 3 miles"]
 var runChallenge: [String] = ["run 5k miles", "run for 2 miles"]
 //:  In your app you want to show all of these lists on the same screen grouped into sections. Create a `challenges` array that holds each of the lists you have created (it will be an array of arrays). Using `challenges`, print the first element in the second challenge list.
 var challenges = [walkChallenge, runChallenge]
-print(challenges[1][1])
+print(challenges[1][0])
 
 
 //:  All of the challenges will reset at the end of the month. Use the `removeAll` to remove everything from `challenges`. Print `challenges`.
