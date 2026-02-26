@@ -6,7 +6,7 @@
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 for (index, letter) in alphabet.enumerated() {
-    if index.isMultiple(of: 2) {
+    if !index.isMultiple(of: 2) {
         continue
     }
     
