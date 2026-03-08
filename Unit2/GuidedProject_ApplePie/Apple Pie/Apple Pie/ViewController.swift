@@ -12,8 +12,21 @@ class ViewController: UIViewController {
     
     let incorrectMovesAllowed = 7
     
-    var totalWins = 0
-    var totalLosses = 0
+    var totalWins = 0 {
+        didSet {
+            newRound()
+        }
+    }
+    var totalLosses = 0 {
+        didSet {
+            newRound()
+        }
+    }
+    
+    
+    
+   // var totalWins = 0
+   // var totalLosses = 0
     
     @IBOutlet weak var treeImageView: UIImageView!
     
@@ -22,6 +35,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var letterButtons: [UIButton]!
     
+   
     var currentGame: Game!
 
   
@@ -36,18 +50,31 @@ class ViewController: UIViewController {
     }
 
     func newRound() {
+        if !listOfWords.isEmpty {
             let newWord = listOfWords.removeFirst()
             currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
+            enableLetterButtons(true)
             updateUI()
+        } else {
+            enableLetterButtons(false)
         }
+    }
+        
+        func enableLetterButtons(_ enable: Bool) {
+            for button in letterButtons {
+                button.isEnabled = enable
+            }
+        }
+    
     
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
-        let letterString = sender.title(for: .normal)!
+        let letterString = sender.configuration?.title ?? sender.title(for: .normal) ?? ""
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
         updateGameState()
     }
+    
     func updateGameState() {
         if currentGame.incorrectMovesRemaining == 0 {
             totalLosses += 1
@@ -56,6 +83,8 @@ class ViewController: UIViewController {
         } else {
             updateUI()
         }
+        
+       
     }
     
     
@@ -68,8 +97,12 @@ class ViewController: UIViewController {
         correctWordLabel.text = wordWithSpacing
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+    
     }
+    
+    
     }
 
     
+
 
