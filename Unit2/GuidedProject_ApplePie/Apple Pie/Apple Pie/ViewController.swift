@@ -12,14 +12,19 @@ class ViewController: UIViewController {
     
     let incorrectMovesAllowed = 7
     
+    var totalScore = 0 {
+        didSet {
+            updateUI()
+        }
+    }
     var totalWins = 0 {
         didSet {
-            newRound()
+            updateUI()
         }
     }
     var totalLosses = 0 {
         didSet {
-            newRound()
+            updateUI()
         }
     }
     
@@ -34,6 +39,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet var letterButtons: [UIButton]!
+    
+    
+    @IBOutlet weak var nextRoundButton: UIButton!
+    
+    @IBAction func nextRoundButtonPressed(_ sender: UIButton) {
+    
+    
+        if currentGame.word == currentGame.formattedWord {
+            totalWins += 1
+            totalScore += 100
+        } else {
+            totalLosses += 1
+        }
+    }
+    
     
     
     var currentGame: Game!
@@ -56,6 +76,7 @@ class ViewController: UIViewController {
             updateUI()
         } else {
             enableLetterButtons(false)
+            nextRoundButton.isHidden = true
             
         }
     }
@@ -72,6 +93,9 @@ class ViewController: UIViewController {
         let letterString = sender.configuration?.title ?? sender.title(for: .normal) ?? ""
         let letter = Character(letterString.lowercased())
         
+        if currentGame.word.contains(letter) {
+            totalScore += 10
+        }
     
         currentGame.playerGuessed(letter: letter)
         updateGameState()
@@ -79,10 +103,13 @@ class ViewController: UIViewController {
 
     func updateGameState() {
         if currentGame.incorrectMovesRemaining == 0 {
-            totalLosses += 1
+            enableLetterButtons(false)
+            updateUI()
         } else if currentGame.word == currentGame.formattedWord {
-            totalWins += 1
+       enableLetterButtons(false)
+            updateUI()
         } else {
+            
             updateUI()
         }
         
@@ -93,15 +120,22 @@ class ViewController: UIViewController {
     func updateUI() {
         
         var letters = [String]()
+        
         for letter in currentGame.formattedWord {
             letters.append(String(letter))
         }
         let wordWithSpacing = letters.joined(separator: " ")
+        
         correctWordLabel.text = wordWithSpacing
-        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        scoreLabel.text = "Wins: \(totalWins)  Losses: \(totalLosses)   Point: \(totalScore)"
         
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     
+        let isRoundOver = (currentGame.word == currentGame.formattedWord) || (currentGame.incorrectMovesRemaining == 0)
+        let hasMoreWords = !listOfWords.isEmpty
+        
+        nextRoundButton.isEnabled = isRoundOver && hasMoreWords
+        nextRoundButton.isHidden = !isRoundOver
     }
     
     

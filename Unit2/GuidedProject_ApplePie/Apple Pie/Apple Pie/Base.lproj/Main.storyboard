@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad7_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="iPad13_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Apple_Pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1133" height="744"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y3q-gn-oW3">
-                                <rect key="frame" x="0.0" y="24" width="1133" height="670"/>
+                                <rect key="frame" x="0.0" y="32" width="1376" height="955"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="aK0-qz-vUQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="1133" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1376" height="630"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qpT-jV-Cd0">
-                                        <rect key="frame" x="0.0" y="400" width="1133" height="270"/>
+                                        <rect key="frame" x="0.0" y="630" width="1376" height="325"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JzD-Vh-8Ie">
-                                                <rect key="frame" x="294" y="0.0" width="545" height="50"/>
+                                                <rect key="frame" x="415.5" y="0.0" width="545" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEq-X3-QXa">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -170,7 +170,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hr1-bS-qCG">
-                                                <rect key="frame" x="321.5" y="55" width="490" height="50"/>
+                                                <rect key="frame" x="443" y="55" width="490" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-qj-LmI">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -316,7 +316,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pJL-d5-Bbk">
-                                                <rect key="frame" x="376.5" y="110" width="380" height="50"/>
+                                                <rect key="frame" x="498" y="110" width="380" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktt-bf-gjt">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -418,17 +418,26 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM9-RV-rxm">
-                                                <rect key="frame" x="531" y="165" width="71" height="50"/>
+                                                <rect key="frame" x="652.5" y="165" width="71" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbX-my-TKv">
-                                                <rect key="frame" x="542.5" y="220" width="48" height="50"/>
+                                                <rect key="frame" x="664" y="220" width="48" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elJ-it-1vn">
+                                                <rect key="frame" x="605.5" y="275" width="165" height="50"/>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Click for new word"/>
+                                                <connections>
+                                                    <action selector="nextRoundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqu-TW-ugz"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -445,6 +454,7 @@
                     </view>
                     <connections>
                         <outlet property="correctWordLabel" destination="UM9-RV-rxm" id="7KP-XK-WTL"/>
+                        <outlet property="nextRoundButton" destination="elJ-it-1vn" id="3jX-1d-gNt"/>
                         <outlet property="scoreLabel" destination="RbX-my-TKv" id="i6M-id-lOA"/>
                         <outlet property="treeImageView" destination="aK0-qz-vUQ" id="iRV-Tl-9l0"/>
                         <outletCollection property="letterButtons" destination="FEq-X3-QXa" collectionClass="NSMutableArray" id="DjA-YE-bu5"/>
@@ -482,6 +492,9 @@
     </scenes>
     <resources>
         <image name="Tree 0" width="600" height="945"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
