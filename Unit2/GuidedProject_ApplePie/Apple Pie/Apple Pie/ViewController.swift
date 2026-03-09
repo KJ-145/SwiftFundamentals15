@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Apple Pie
 //
-//  Created by Joshua on 3/5/26.
 //
 
 import UIKit
@@ -45,13 +44,7 @@ class ViewController: UIViewController {
     
     @IBAction func nextRoundButtonPressed(_ sender: UIButton) {
     
-    
-        if currentGame.word == currentGame.formattedWord {
-            totalWins += 1
-            totalScore += 100
-        } else {
-            totalLosses += 1
-        }
+        newRound()
     }
     
     
@@ -71,7 +64,9 @@ class ViewController: UIViewController {
     func newRound() {
         if !listOfWords.isEmpty {
             let newWord = listOfWords.removeFirst()
+            
             currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
+            
             enableLetterButtons(true)
             updateUI()
         } else {
@@ -103,19 +98,19 @@ class ViewController: UIViewController {
 
     func updateGameState() {
         if currentGame.incorrectMovesRemaining == 0 {
-            enableLetterButtons(false)
-            updateUI()
-        } else if currentGame.word == currentGame.formattedWord {
-       enableLetterButtons(false)
-            updateUI()
-        } else {
+            totalLosses += 1
             
+            enableLetterButtons(false)
+
+        } else if currentGame.word == currentGame.formattedWord {
+            totalWins += 1
+            totalScore += 100
+            enableLetterButtons(false)
+        } else {
+      
             updateUI()
         }
-        
-       
     }
-    
     
     func updateUI() {
         
