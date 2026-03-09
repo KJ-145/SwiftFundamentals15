@@ -430,10 +430,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elJ-it-1vn">
-                                                <rect key="frame" x="605.5" y="275" width="165" height="50"/>
+                                                <rect key="frame" x="634" y="275" width="108" height="50"/>
                                                 <color key="tintColor" systemColor="linkColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Click for new word"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title=" New Word"/>
                                                 <connections>
                                                     <action selector="nextRoundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqu-TW-ugz"/>
                                                 </connections>
